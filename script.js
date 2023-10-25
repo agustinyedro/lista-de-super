@@ -30,7 +30,7 @@ function actualizarListaProductos() {
         li.textContent = `${producto.producto}: $${producto.precio}`;
         const botonEliminar = document.createElement('button');
         botonEliminar.innerHTML = '<img src="delete_white_24dp.svg" alt="Eliminar">';
-        // botonEliminar.textContent = 'Eliminar';
+        botonEliminar.className ='boton';
         botonEliminar.addEventListener('click', () => eliminarProducto(index));
         li.appendChild(botonEliminar);
         listaProductos.appendChild(li);
